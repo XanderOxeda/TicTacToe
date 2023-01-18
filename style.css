@@ -1,3 +1,9 @@
+:root{
+    --main-color: rgb(36, 141, 202);
+    --dark-color: rgb(24, 54, 71);
+    --ligh-color: rgb(255, 255, 255);
+    --line: 10px solid var(--dark-color);
+}
 *{
     box-sizing: border-box;
     padding: 0;
@@ -5,17 +11,11 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--dark-color);
 }
-:root{
-    --main-color: rgb(36, 141, 202);
-    --dark-color: rgb(24, 54, 71);
-    --ligh-color: rgb(255, 255, 255);
-    --line: 10px solid var(--dark-color);
-}
 body{
     user-select: none;
     background: var(--main-color);
     display: flex;
-    /*flex-direction: column;*/
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
