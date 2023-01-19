@@ -1,19 +1,18 @@
 const tiles = document.querySelectorAll(".tile");
 const symbols = ["X","O","※","✓","⌀"];
-let gameTurn = 1;
+let gameTurn = 0;
 let symbolPlayerOne = 0;
 let symbolPlayerTwo = 0;
 
+
+function turn() {
+    gameTurn = gameTurn === 0 ? 1 : 0;
+    return gameTurn;
+}
+
 tiles.forEach((tile,i)=>{ 
     tile.addEventListener("click", ()=>{
-        if (gameTurn == 1) {
-            gameTurn = 0;
-        }else{
-            gameTurn=1
-        }
-        console.log("XO",i)
-
-        tile.innerText = symbols[gameTurn];
+        tile.innerText = symbols[turn(gameTurn);];
         
 
     })
