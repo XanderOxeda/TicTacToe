@@ -10,6 +10,7 @@
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--dark-color);
+    text-decoration: none;
 }
 body{
     user-select: none;
@@ -18,6 +19,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 header,main,footer{
     width: 100%;
@@ -56,26 +58,54 @@ td{
     padding: 1rem 2rem;
 }
 
-
 footer{
     height: 5vh;
     background-color: #2C3E50;
     justify-content: space-between;
     flex-direction: row;
     padding: .1rem .25rem;
-  }
-  footer section{
+}
+footer section{
     padding: 1vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  .footer--icons{
+}
+.footer--icons{
     max-height: 3vh;
     margin: 0 10px;
     width: 1.5rem;
     height: 1.5rem;
-  }
-  .developer a{
+}
+.developer a{
     color: #ECF0F1;
-  }
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+dialog{
+    text-align: center;
+    min-width: 50vw;
+    background-color: rgba(240, 248, 255, 0.23);
+    padding: 3rem;
+    border: unset;
+    margin: auto;
+}
+
+dialog::backdrop{
+    backdrop-filter: blur(3px);
+}
+
+dialog h2{
+    font-family: var(--font-family);
+    font-size: xx-large;
+}
+
+dialog button{
+    font-size: larger;
+    padding: 1rem;
+    margin-top: 2rem;
+}
